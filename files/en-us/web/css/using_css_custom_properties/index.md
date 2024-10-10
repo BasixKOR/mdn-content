@@ -25,7 +25,7 @@ The following sections describe how to use these two methods.
 
 ### Using a prefix of two dashes (`--`)
 
-A custom property prefixed with two dashes begins with `--`, followed by the property name (e.g.,`--my-property`), and a property value that can be any [valid CSS value](/en-US/docs/Learn/CSS/Building_blocks/Values_and_units).
+A custom property prefixed with two dashes begins with `--`, followed by the property name (e.g., `--my-property`), and a property value that can be any [valid CSS value](/en-US/docs/Learn/CSS/Building_blocks/Values_and_units).
 Like any other property, this is written inside a ruleset.
 The following example shows how to create a custom property `--main-bg-color` and uses a [`<named-color>`](/en-US/docs/Web/CSS/named-color) value of `brown`:
 
@@ -375,6 +375,8 @@ You should be aware of the performance impact of this method, however, as it tak
 
 Aside from using `var()`, the `initial-value` defined in the `@property` at-rule can be used as a fallback mechanism.
 In fact, we've already seen this in the [`@property` inheritance](#using_property_to_control_inheritance) section.
+
+<!-- cSpell:ignore aqumarine -->
 
 The following example sets an initial value of `--box-color` to `cornflowerblue` using the `@property` at-rule.
 In the ruleset following the at-rule, we want to set `--box-color` to `aquamarine`, but there's a typo in the value name.

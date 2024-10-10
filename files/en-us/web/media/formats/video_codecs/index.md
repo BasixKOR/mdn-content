@@ -144,7 +144,7 @@ Additionally, all codecs have their strengths and weaknesses. Some have trouble 
         The higher the color bit depth, the higher the quality of color fidelity
         is achieved in the video. Additionally, in saturated portions of the
         image (that is, where colors are pure and intense, such as a bright,
-        pure red [<code>rgb(255 0 0 / 100%)</code>]), color depths below 10 bits
+        pure red: <code>rgb(255 0 0 / 100%)</code>), color depths below 10 bits
         per component (10-bit color) allow banding, where gradients cannot be
         represented without visible stepping of the colors.
       </td>
@@ -392,7 +392,7 @@ In the example image above, note how the sky has bands of different shades of bl
 
 ### Mosquito noise
 
-**Mosquito noise** is a temporal artifact which presents as noise or **edge busyness** that appears as a flickering haziness or shimmering that roughly follows outside the edges of objects with hard edges or sharp transitions between foreground objects and the background. The effect can be similar in appearance to [ringing](#ringing) .
+**Mosquito noise** is a temporal artifact which presents as noise or **edge busyness** that appears as a flickering haziness or shimmering that roughly follows outside the edges of objects with hard edges or sharp transitions between foreground objects and the background. The effect can be similar in appearance to [ringing](#ringing).
 
 ![Example of an image whose compression has introduced mosquito noise.](mosquito-effect-sm.png)
 

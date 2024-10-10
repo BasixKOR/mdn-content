@@ -25,7 +25,7 @@ The following attributes are deprecated and should not be used. They are documen
 
 - `bgcolor` {{deprecated_inline}}
 
-  - : Defines the background color of each head cell. The value is an HTML color; either a [6-digit hexadecimal RGB code](/en-US/docs/Web/CSS/hex-color), prefixed by a '`#`', or a [color keyword](/en-US/docs/Web/CSS/named-color). Other CSS {{cssxref("color_value", "&lt;color&gt")}} values are not supported. Use the {{cssxref("background-color")}} CSS property instead, as this attribute is deprecated.
+  - : Defines the background color of each head cell. The value is an HTML color; either a [6-digit hexadecimal RGB code](/en-US/docs/Web/CSS/hex-color), prefixed by a `#`, or a [color keyword](/en-US/docs/Web/CSS/named-color). Other CSS {{cssxref("color_value", "&lt;color&gt")}} values are not supported. Use the {{cssxref("background-color")}} CSS property instead, as this attribute is deprecated.
 
 - `char` {{deprecated_inline}}
 
@@ -254,7 +254,7 @@ tbody > tr > td:last-of-type {
       <th scope="row">Permitted parents</th>
       <td>
         A {{HTMLElement("table")}} element. The
-        `<thead>` must appear after any
+        <code>&lt;thead&gt;</code> must appear after any
         {{HTMLElement("caption")}} and
         {{HTMLElement("colgroup")}} elements, even implicitly defined,
         but before any {{HTMLElement("tbody")}},

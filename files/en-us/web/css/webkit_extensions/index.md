@@ -94,7 +94,7 @@ User agents based on WebKit or Blink, such as Safari and Chrome, support several
 
 ## -webkit-prefixed properties with standard equivalents
 
-Several old `-webkit-`prefixed properties have standard equivalents. Even if the name and syntax may be different, they shouldn't be used anymore at all.
+Several old `-webkit-` prefixed properties have standard equivalents. Even if the name and syntax may be different, they shouldn't be used anymore at all.
 
 For each of them, use the standard equivalent provided.
 
@@ -178,6 +178,11 @@ For each of them, use the standard equivalent provided.
   - : Use the standard {{CSSxRef("padding-inline-end")}} property instead.
 - `-webkit-padding-start`
   - : Use the standard {{CSSxRef("padding-inline-start")}} property instead.
+
+## -webkit-prefixed property values
+
+- `-webkit-fill-available`
+  - : Used with sizing properties like {{CSSxRef("width")}} and {{CSSxRef("height")}}, to allow elements to take up all the available space within their parent container. The flexbox `stretch` value (see for example {{CSSxRef("align-items")}} and {{CSSxRef("justify-items")}}) provides a standard replacement.
 
 ## Pseudo-classes
 

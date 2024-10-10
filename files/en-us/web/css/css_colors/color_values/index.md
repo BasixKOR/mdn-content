@@ -332,7 +332,7 @@ th {
 
 ### LCH and OKLCH: CIELAB and Oklab color spaces
 
-While `hsl()` and `hwb()` are intuitive, they have a major drawback. With these functions, every fully-saturated hue angle (`hsl(<angle> 100% 50%)` or `hwb(<angle> 0% 0%)`) has the same lightess, but that is not how human vision or monitors work. Putting white text on fully saturated blue (`hsl(240deg 100% 50%)`) is legible, but that same text on fully saturated yellow (`hsl(60deg 100% 50%)`) will not only be illegible, but may hurt your user's eyes. In these color functions, the lightness of a color is relative to other colors, not to human perception. In reality, not all hues have the same max saturation.
+While `hsl()` and `hwb()` are intuitive, they have a major drawback. With these functions, every fully-saturated hue angle (`hsl(<angle> 100% 50%)` or `hwb(<angle> 0% 0%)`) has the same lightness, but that is not how human vision or monitors work. Putting white text on fully saturated blue (`hsl(240deg 100% 50%)`) is legible, but that same text on fully saturated yellow (`hsl(60deg 100% 50%)`) will not only be illegible, but may hurt your user's eyes. In these color functions, the lightness of a color is relative to other colors, not to human perception. In reality, not all hues have the same max saturation.
 
 Wouldn't it be fantastic if you could simply change the hue channel of a color on a site without making text illegible? You can with color functions in the CIELAB and Oklab color spaces.
 
@@ -539,7 +539,7 @@ The [`lab()`](/en-US/docs/Web/CSS/color_value/lab) functional notation expresses
 Similar to `lch()` and `oklch()`, the `lightness` is either:
 
 - A {{cssxref("percentage")}}, with `0%` being completely black and `100%` being completely white.
-- A number between `0` and `100` for `lab()` and `0` and `1` for `oklab()`, where `0` is completely black and`1`/`100` is completely white.
+- A number between `0` and `100` for `lab()` and `0` and `1` for `oklab()`, where `0` is completely black and `1`/`100` is completely white.
 
 The `a` value is `<number>` between `-125` and `125` for `lab()` or `-0.4` and `0.4` for `oklab()`, a `<percentage>` between `-100%` and `100%`, or the keyword `none` (equivalent to `0%` in this case). This value specifies the color's distance along the a-axis in the color space, which defines how green (moving towards -100%) or red (moving towards +100%) the color is.
 

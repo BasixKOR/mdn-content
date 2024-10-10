@@ -326,9 +326,6 @@ In the example below, we have added a background image to the containing block o
 
 **In this example, try changing the alpha channel values to see how it affects the color output.**
 
-> [!NOTE]
-> In older versions of CSS, the `rgb()` syntax didn't support an alpha parameter - you needed to use a different function called `rgba()` for that. These days you can pass an alpha parameter to `rgb()`. The `rgba()` function is an alias for `rgb()`.
-
 ### SRGB values
 
 The `sRGB` color space defines colors in the **red** (r), **green** (g), and **blue** (b) color space.
@@ -339,7 +336,7 @@ If you want to go beyond keywords, hexadecimal, and `rgb()` for colors, you migh
 Hue is the property that allows us to tell the difference or similarity between colors like red, orange, yellow, green, blue, etc.
 The key concept is that you can specify a hue in an [`<angle>`](/en-US/docs/Web/CSS/angle) because most of the color models describe hues using a {{glossary("color wheel")}}.
 
-There are several color functions that include a [`<hue>`](/en-US/docs/Web/CSS/hue) component, including `hsl()`,`hwb()`, and [`lch()`](/en-US/docs/Web/CSS/color_value/lch). Other color functions, like [`lab()`](/en-US/docs/Web/CSS/color_value/lab), define colors based on what humans can see.
+There are several color functions that include a [`<hue>`](/en-US/docs/Web/CSS/hue) component, including `hsl()`, `hwb()`, and [`lch()`](/en-US/docs/Web/CSS/color_value/lch). Other color functions, like [`lab()`](/en-US/docs/Web/CSS/color_value/lab), define colors based on what humans can see.
 
 If you want to find out more about these functions and color spaces, see the [Applying color to HTML elements using CSS](/en-US/docs/Web/CSS/CSS_colors/Applying_color) guide, the [`<color>`](/en-US/docs/Web/CSS/color_value) reference that lists all the different ways you can use colors in CSS, and the [CSS color module](/en-US/docs/Web/CSS/CSS_colors) that provides an overview of all the color types in CSS and the properties that use color values.
 
@@ -370,9 +367,6 @@ Let's update the RGB example to use HSL colors instead:
 Just like with `rgb()` you can pass an alpha parameter to `hsl()` to specify opacity:
 
 {{EmbedGHLiveSample("css-examples/learn/values-units/color-hsla.html", '100%', 900)}}
-
-> [!NOTE]
-> In older versions of CSS, the `hsl()` syntax didn't support an alpha parameter - you needed to use a different function called `hsla()` for that. These days you can pass an alpha parameter to `hsl()`, but for backwards compatibility with old websites, the `hsla()` syntax is still supported, and has exactly the same behavior as `hsl()`.
 
 ## Images
 

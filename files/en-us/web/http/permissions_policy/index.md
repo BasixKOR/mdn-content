@@ -80,7 +80,7 @@ An allowlist is a list of origins that takes one or more of the following values
 The values `*` and `()` may only be used on their own, while `self` and `src` may be used in combination with one or more origins.
 
 > [!NOTE]
-> Directives have a default allowlist, which is always one of `*`, `self`, or `none` for the `Permissions-Policy` HTTP header, and governs the default behavior if they are not explicitly listed in a policy. These are specified on the individual [directive reference pages](/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives). For `<iframe>` `allow` attributes , the default behavior is always `src`.
+> Directives have a default allowlist, which is always one of `*`, `self`, or `none` for the `Permissions-Policy` HTTP header, and governs the default behavior if they are not explicitly listed in a policy. These are specified on the individual [directive reference pages](/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives). For `<iframe>` `allow` attributes, the default behavior is always `src`.
 
 Where supported, you can include wildcards in Permissions Policy origins. This means that instead of having to explicitly specify several different subdomains in an allowlist, you can specify them all in a single origin with a wildcard.
 
@@ -189,7 +189,7 @@ It is worth giving the `src` value a special mention. We mentioned above that us
 
 ### Fenced frames and permissions policy
 
-{{htmlelement("fencedframe")}}s interact with permissions policies in the same way as `<iframe>`s, but in a much more restricted capacity. Only specific features designed to be used in `<fencedframes>`s can be enabled via permissions policies set on them; other policy-controlled features are not available in this context.
+{{htmlelement("fencedframe")}}s interact with permissions policies in the same way as `<iframe>`s, but in a much more restricted capacity. Only specific features designed to be used in `<fencedframe>`s can be enabled via permissions policies set on them; other policy-controlled features are not available in this context.
 
 See [Permissions policies available to fenced frames](/en-US/docs/Web/HTML/Element/fencedframe#permissions_policies_available_to_fenced_frames) for more details.
 

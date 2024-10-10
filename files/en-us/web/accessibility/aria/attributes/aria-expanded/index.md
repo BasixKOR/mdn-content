@@ -21,7 +21,7 @@ Use the `aria-owns` property on the elements that own expandable grouping contai
 
 ### Buttons
 
-A button that opens a widget should have `aria-controls` set to the [`id`](/en-US/docs/Web/HTML/Global_attributes#id) of the expandable widget and `aria-expanded` set to the current state of the widget.
+A button that opens a widget should have `aria-controls` set to the [`id`](/en-US/docs/Web/HTML/Global_attributes/id) of the expandable widget and `aria-expanded` set to the current state of the widget.
 
 ```html
 <button aria-expanded="false" aria-controls="widget1">Show widget</button>
@@ -61,7 +61,7 @@ By default, some roles are hidden or collapsed and other roles are open or expan
 
 ### Treeitems
 
-Each element with role [`treeitem`](/en-US/docs/Web/Accessibility/ARIA/Roles/treeitem_role) that serves as a parent node has `aria-expanded="false"` when the node is in a closed state and `aria-expanded="true"`when the node is in an open state. End nodes, nodes with no descendant nodes, should not have the `aria-expanded` attribute because, if they were to have it, they would be incorrectly described to assistive technologies as parent nodes.
+Each element with role [`treeitem`](/en-US/docs/Web/Accessibility/ARIA/Roles/treeitem_role) that serves as a parent node has `aria-expanded="false"` when the node is in a closed state and `aria-expanded="true"` when the node is in an open state. End nodes, nodes with no descendant nodes, should not have the `aria-expanded` attribute because, if they were to have it, they would be incorrectly described to assistive technologies as parent nodes.
 
 ### Rows
 
@@ -121,4 +121,4 @@ Inherits into roles:
 - [`aria-controls`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls)
 - [`aria-owns`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-owns)
 - [`aria-hidden`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden)
-- HTML [`hidden`](/en-US/docs/Web/HTML/Global_attributes#hidden) attribute
+- HTML [`hidden`](/en-US/docs/Web/HTML/Global_attributes/hidden) attribute

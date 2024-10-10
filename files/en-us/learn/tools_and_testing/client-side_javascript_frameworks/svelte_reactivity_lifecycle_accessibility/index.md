@@ -365,7 +365,7 @@ Let's begin by extracting our new to-do form out to its own component. With what
 
 ## Working with DOM nodes using the `bind:this={dom_node}` directive
 
-Now we want the `<input>`element of the `NewTodo` component to re-gain focus every time the _Add_ button is pressed. For that we'll need a reference to the DOM node of the input. Svelte provides a way to do this with the `bind:this={dom_node}` directive. When specified, as soon as the component is mounted and the DOM node is created, Svelte assigns a reference to the DOM node to the specified variable.
+Now we want the `<input>` element of the `NewTodo` component to re-gain focus every time the _Add_ button is pressed. For that we'll need a reference to the DOM node of the input. Svelte provides a way to do this with the `bind:this={dom_node}` directive. When specified, as soon as the component is mounted and the DOM node is created, Svelte assigns a reference to the DOM node to the specified variable.
 
 We'll create a `nameEl` variable and bind it to the input using `bind:this={nameEl}`. Then inside `addTodo()`, after adding the new to-do we will call `nameEl.focus()` to refocus the `<input>` again. We will do the same when the user presses the <kbd>Escape</kbd> key, with the `onCancel()` function.
 
@@ -513,7 +513,7 @@ So, what is happening here? When you update a component's state in Svelte, it do
 
 In this case, when `editing` is `false`, the edit `<input>` is not visible because it does not exist in the DOM. Inside the `onEdit()` function we set `editing = true` and immediately afterwards try to access the `nameEl` variable and execute `nameEl.focus()`. The problem here is that Svelte hasn't yet updated the DOM.
 
-One way to solve this problem is to use [`setTimeout()`](/en-US/docs/Web/API/setTimeout) to delay the call to `nameEl.focus()` until the next event cycle, and give Svelte the opportunity to update the DOM.
+One way to solve this problem is to use {{domxref("Window.setTimeout", "setTimeout()")}} to delay the call to `nameEl.focus()` until the next event cycle, and give Svelte the opportunity to update the DOM.
 
 Try this now:
 

@@ -428,7 +428,7 @@ Depth and stencil attachments and formats are actually inseparable on many devic
 
 ## texImage/texSubImage uploads (esp. videos) can cause pipeline flushes
 
-Most texture uploads from DOM elements will incur a processing pass that will temporarily switch GL Programs internally, causing a pipeline flush. (Pipelines are formalized explicitly in Vulkan\[[1](https://registry.khronos.org/vulkan/specs/1.2/html/chap9.html#VkGraphicsPipelineCreateInfo)] et al, but are implicit behind-the-scenes in OpenGL and WebGL. Pipelines are more or less the tuple of shader program, depth/stencil/multisample/blend/rasterization state)
+Most texture uploads from DOM elements will incur a processing pass that will temporarily switch GL Programs internally, causing a pipeline flush. (Pipelines are formalized explicitly in [Vulkan](https://registry.khronos.org/vulkan/specs/1.2/html/chap9.html#VkGraphicsPipelineCreateInfo) et al, but are implicit behind-the-scenes in OpenGL and WebGL. Pipelines are more or less the tuple of shader program, depth/stencil/multisample/blend/rasterization state)
 
 In WebGL:
 
@@ -512,7 +512,7 @@ The WebGL 2.0 `texImage*` API lets you define each mip level independently and a
 
 Further, some drivers might unconditionally allocate the whole mip-chain (+30% memory!) even if you only want a single level.
 
-So, prefer `texStorage`+`texSubImage` for textures in WebGL 2
+So, prefer `texStorage` + `texSubImage` for textures in WebGL 2.
 
 ## Use invalidateFramebuffer
 

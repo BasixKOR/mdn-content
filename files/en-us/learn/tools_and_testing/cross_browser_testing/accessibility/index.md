@@ -134,7 +134,7 @@ You can then press Enter/Return to follow a focused link or press a button (we'v
 
 Note that different browsers may have different keyboard control options available. Most modern browsers follow the tab pattern described above (you can also do Shift + Tab to move backwards through the focusable elements), but some browsers have their own idiosyncrasies:
 
-- Safari on Mac doesn't allow you to tab through links by default; to enable this, open _System Settings_, scroll down to _Keyboard_, and enable _Keyboard navigation_. If you're using an older version of macOS, see [Use your keyboard like a mouse with Mac](https://support.apple.com/en-is/guide/mac-help/mchlp1399/mac) on Apple's macOS User Guide.
+- Safari on Mac doesn't allow you to tab through links by default; to enable this, open _System Settings_, scroll down to _Keyboard_, and enable _Keyboard navigation_. If you're using an older version of macOS, see [Use your keyboard like a mouse with Mac](https://support.apple.com/guide/mac-help/use-your-keyboard-like-a-mouse-mh27469/mac) on Apple's macOS User Guide.
 
 > [!WARNING]
 > You should perform this kind of test/review on any new page you write — make sure that functionality can be accessed by the keyboard, and that the tab order provides a sensible navigation path through the document.
@@ -237,7 +237,7 @@ There are many instances where a visual design will require that not all content
 
 Screen reader users don't care about any of this — they are happy with the content as long as the source order makes sense, and they can get to it all. Absolute positioning (as used in this example) is generally seen as one of the best mechanisms of hiding content for visual effect, because it doesn't stop screen readers from getting to it.
 
-On the other hand, you shouldn't use {{cssxref("visibility")}}`:hidden` or {{cssxref("display")}}`:none`, because they do hide content from screen readers. Unless of course, there is a good reason why you want this content to be hidden from screen readers.
+On the other hand, you shouldn't use {{cssxref("visibility", "visibility: hidden")}} or {{cssxref("display", "display: none")}}, because they do hide content from screen readers. Unless of course, there is a good reason why you want this content to be hidden from screen readers.
 
 > **Note:** [Invisible Content Just for Screen Reader Users](https://webaim.org/techniques/css/invisiblecontent/) has a lot more useful detail surrounding this topic.
 

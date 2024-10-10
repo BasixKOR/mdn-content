@@ -258,7 +258,7 @@ In our second example, we will take our first example — our info-box — and a
 > [!NOTE]
 > You can see the finished example running live at [fixed-info-box.html](https://mdn.github.io/learning-area/css/css-layout/practical-positioning-examples/fixed-info-box.html) ([source code](https://github.com/mdn/learning-area/blob/main/css/css-layout/practical-positioning-examples/fixed-info-box.html)). Check it out to get an idea of what you will be building in this section of the article.
 
-As a starting point, you can use your completed example from the first section of the article, or make a local copy of [info-box.html](https://github.com/mdn/learning-area/blob/main/css/css-layout/practical-positioning-examples/info-box.html) from our GitHub repo.
+As a starting point, you can use your completed example from the first section of the article, or make a local copy of [tabbed-info-box.html](https://github.com/mdn/learning-area/blob/main/css/css-layout/practical-positioning-examples/tabbed-info-box.html) from our GitHub repo.
 
 ### HTML additions
 
@@ -299,7 +299,7 @@ First of all, we need some additional HTML to represent the webpage's main conte
 
 ### Changes to the existing CSS
 
-Next we need to make some small changes to the existing CSS, to get the info-box placed and positioned. Change your `.info-box` rule to get rid of `margin: 0 auto;` (we no longer want the info-box centered), add {{cssxref("position")}}`: fixed;`, and stick it to the {{cssxref("top")}} of the browser viewport.
+Next we need to make some small changes to the existing CSS, to get the info-box placed and positioned. Change your `.info-box` rule to get rid of `margin: 0 auto;` (we no longer want the info-box centered), add {{cssxref("position", "position: fixed;")}}, and stick it to the {{cssxref("top")}} of the browser viewport.
 
 It should now look like this:
 
@@ -417,7 +417,7 @@ A lot going on here — let's discuss it bit by bit:
 - First, we set some simple {{cssxref("background-color")}} and {{cssxref("color")}} on the info box.
 - Next, we set a fixed {{cssxref("width")}} on the panel, and make its {{cssxref("height")}} the entire height of the browser viewport.
 - We also include some horizontal {{cssxref("padding")}} to space it out a bit.
-- Next we set {{cssxref("position")}}`: fixed;` on the panel so it will always appear in the same place, even if the page has content to scroll. We glue it to the {{cssxref("top")}} of the viewport, and set it so that by default it is offscreen to the {{cssxref("right")}}.
+- Next we set {{cssxref("position", "position: fixed;")}} on the panel so it will always appear in the same place, even if the page has content to scroll. We glue it to the {{cssxref("top")}} of the viewport, and set it so that by default it is offscreen to the {{cssxref("right")}}.
 - Finally, we set a {{cssxref("transition")}} on the element. Transition is an interesting feature that allows you to make changes between states happen smoothly, rather than just going "on" or "off" abruptly. In this case, we intend to make the panel slide smoothly onscreen when the checkbox is checked. (Or to put it another way, when the question mark icon is clicked.)
 
 ### Setting the checked state

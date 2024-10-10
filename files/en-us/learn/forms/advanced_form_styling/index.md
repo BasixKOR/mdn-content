@@ -157,7 +157,7 @@ Different browsers handle the checkbox and span differently, often ugly ways:
 
 #### Using appearance: none on radios/checkboxes
 
-As we showed before, you can remove the default appearance of a checkbox or radio button altogether with {{cssxref('appearance')}}`:none;`. Let's take this example HTML:
+As we showed before, you can remove the default appearance of a checkbox or radio button altogether with {{cssxref("appearance", "appearance: none;")}}. Let's take this example HTML:
 
 ```html
 <form>
@@ -483,7 +483,7 @@ And then style the label to act like a button, which when pressed will open the 
 label[for="file"] {
   box-shadow: 1px 1px 3px #ccc;
   background: linear-gradient(to bottom, #eee, #ccc);
-  border: 1px solid rgb(169, 169, 169);
+  border: 1px solid rgb(169 169 169);
   border-radius: 5px;
   text-align: center;
   line-height: 1.5;
